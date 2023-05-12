@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../public/assets/styles/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/contact.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Hakkında</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/egitim.html">Eğitim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/miras.html">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/hobilerim.html">Hobilerim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/kayit.html">Kayıt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/iletisim.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div id="app" class="container">
+        <h1>Contact Me</h1>
+        <form @submit.prevent="submitForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" v-model="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" v-model="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" v-model="message" class="form-control" maxlength="500"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="reset" class="btn btn-secondary" @click="clearForm">Clear</button>
+        </form>
+    </div>
+
+    <!-- Vue.js Application -->
+    <script src="../scripts/contact.js"></script>
+</body>
+</html>
