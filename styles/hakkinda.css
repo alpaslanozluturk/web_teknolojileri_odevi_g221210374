@@ -1,0 +1,9 @@
+.about-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-container h2 {
+    margin-bottom: 20px;
+}

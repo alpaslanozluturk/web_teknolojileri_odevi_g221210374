@@ -1,34 +1,37 @@
-/* Main CSS */
-
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
 .container {
-    width: 75%;
+    width: 80%;
     margin: auto;
-    overflow: hidden;
+    padding: 20px;
 }
 
-/* Navigation Bar styles */
-.navbar {
-    background-color: #333;
-    color: #f4f4f4;
-    padding: 10px;
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
 }
 
-.navbar a {
-    color: #f4f4f4;
+a {
+    color: #0066cc;
     text-decoration: none;
 }
 
-.navbar a:hover {
-    color: #ffffff;
+a:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    background-color: #0066cc;
+    padding: 10px 0;
+    color: white;
+}
+
+.navbar a {
+    color: white;
 }
