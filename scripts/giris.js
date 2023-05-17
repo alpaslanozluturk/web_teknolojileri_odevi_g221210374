@@ -8,16 +8,16 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     formData.append('username', username);
     formData.append('password', password);
 
-    fetch('login.php', {
+    fetch('../php/giris.php', {
         method: 'POST',
         body: formData
     })
     .then(response => response.text())
     .then(data => {
         if (data.trim() === 'success') {
-            document.getElementById('message').innerText = 'Welcome';
+            document.getElementById('message').innerText = 'Hoşgeldiniz '+ username + '!';
         } else {
-            document.getElementById('message').innerText = 'Login failed. Try again.';
+            document.getElementById('message').innerText = 'Giriş bilgilerinizi lütfen kontrol ediniz.';
         }
     })
     .catch((error) => {
