@@ -1,5 +1,5 @@
-var hobbies = ['swimming' , 'gaming', 'reading history'];
-var hobbiesTR=['yüzmek' ,'bilgisayar oyunları','tarih okumak']
+var hobbies = ['swimming' , 'gaming', 'screenwriting'];
+var hobbiesTR=['Yüzmek' ,'Bilgisayar Oyunları',' Amatör senaristlik']
 
 const apiKey = 'EjHEKkpXng3q3cdlcGpx7BhfuYZHSTcBtyvTXr8A3IRNVVTiiywSs9B9';
 
@@ -31,7 +31,7 @@ window.onload = function() {
             img.src = data.photos[0].src.original;
             img.style.display = 'block'; // Show image when loaded
           } else {
-            console.log('No photos found for this hobby');
+            console.log('Bu hobi için fotoğraf bulunamadı');
           }
         })
         .catch(error => console.log('Error:', error));

@@ -7,3 +7,12 @@
 .about-container h2 {
     margin-bottom: 20px;
 }
+
+img {
+    max-width: 320px;
+}
+.my-image {
+    position: fixed;
+    top: 140px;    
+    right: 1100px  !important;
+}

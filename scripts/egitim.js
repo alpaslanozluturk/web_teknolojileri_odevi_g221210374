@@ -1,4 +1,3 @@
-// An example of education history data
 var educationData = [
     { 
         school: 'Sakarya Üniversitesi',

@@ -1,0 +1,11 @@
+.my-image {
+    width: 4000px;
+    height: 500px;
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    background-color: rgb(49, 49, 120); 
+    color: silver; 
+}

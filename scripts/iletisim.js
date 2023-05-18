@@ -13,10 +13,10 @@ new Vue({
         },
         submitForm: function() {
             if (this.email.includes('@') && this.message.length <= 500) {
-                alert('Mesajınız İletildi!');
+                alert('Form Gönderildi!');
                 this.clearForm();
             } else {
-                alert('Email hatalı Veya Girdiğiniz mesaj 500 karakterden fazla!');
+                alert('Girdilerinizi Kontrol ediniz!');
             }
         }
     }

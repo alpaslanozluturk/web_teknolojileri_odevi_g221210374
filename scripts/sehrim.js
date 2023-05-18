@@ -5,12 +5,17 @@ const nextButton = document.querySelector('#next');
 
 function switchSlide() {
     slides.forEach((slide, index) => {
-        slide.classList.remove('active');
         if (index === activeSlide) {
-            slide.classList.add('active');
+            slide.style.opacity = 1;
+            slide.style.pointerEvents = 'auto';
+        } else {
+            slide.style.opacity = 0;
+            slide.style.pointerEvents = 'none';
         }
     });
 }
+
+switchSlide(); // call this right after defining the function
 
 prevButton.addEventListener('click', () => {
     activeSlide = (activeSlide - 1 + slides.length) % slides.length;
