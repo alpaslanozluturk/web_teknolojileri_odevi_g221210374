@@ -17,7 +17,7 @@ var educationData = [
     { 
         school: 'Erzurum Mehmet Akfi Ersoy Anadolu Lisesi',
         degree: 'Lise Diploması',
-        year: '2019'
+        year: '2018'
     }
 ];
 

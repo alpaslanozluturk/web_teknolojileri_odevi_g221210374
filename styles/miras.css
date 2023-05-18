@@ -2,3 +2,27 @@
     text-align: center;
     padding: 20px;
 }
+
+.my-image1 {
+    position: fixed;    
+    left: 50px  !important;
+    width: 500px;
+    height: auto ;
+}
+.my-image2 {
+    position: fixed;    
+    left: 560px  !important;
+    width: 500px;
+    height: auto ;
+}
+.my-image3 {
+    position: fixed;    
+    right: 20px  !important;
+    width: auto;
+    height: 273px ;
+}
+
+.my-text {
+
+    margin-top: 20px;
+}
